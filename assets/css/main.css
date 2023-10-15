@@ -19,9 +19,9 @@
 
 /* Colors */
 :root {
-  --color-default: #212529;
-  --color-primary: #ce1212;
-  --color-secondary: #37373f;
+  --color-default: #3B5998;
+  --color-primary: #FF8C00;
+  --color-secondary: #1A2A4C;
 }
 
 /* Smooth scroll behavior */
@@ -309,6 +309,10 @@ section {
     padding: 0;
   }
 
+  .navar a {
+    color: #0b3d91;
+  }
+
   .navbar ul {
     margin: 0;
     padding: 0;
@@ -319,7 +323,9 @@ section {
 
   .navbar li {
     position: relative;
+
   }
+  
 
   .navbar>ul>li {
     white-space: nowrap;
