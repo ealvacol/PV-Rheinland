@@ -21,6 +21,7 @@
 :root {
   --color-default: #3B5998;
   --color-primary: #FF8C00;
+  --color-primary-dark: #E57500;
   --color-secondary: #1A2A4C;
 }
 
@@ -43,7 +44,7 @@ a {
 }
 
 a:hover {
-  color: #ec2727;
+  color: var(--color-primary-dark);
   text-decoration: none;
 }
 
@@ -1491,11 +1492,12 @@ section {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
 .hero {
   width: 100%;
   background-size: cover;
   position: relative;
-  min-height: 60vh;
+  min-height:80vh;
   padding: 160px 0 60px 0;
 }
 
@@ -1503,16 +1505,16 @@ section {
   font-size: 64px;
   font-weight: 700;
   margin-bottom: 20px;
-  color: var(--color-secondary);
+  color: black;
   font-family: var(--font-primary);
 }
 
 .hero h2 span {
-  color: var(--color-primary);
+  color: black;
 }
 
 .hero p {
-  color: #4f4f5a;
+  color: black;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -1525,13 +1527,13 @@ section {
   padding: 12px 36px;
   border-radius: 50px;
   transition: 0.5s;
-  color: #fff;
+  color: white;
   background: var(--color-primary);
   box-shadow: 0 8px 28px rgba(206, 18, 18, 0.2);
 }
 
 .hero .btn-book-a-table:hover {
-  background: rgba(206, 18, 18, 0.8);
+  background: rgba(229, 117, 0, 1);
   box-shadow: 0 8px 28px rgba(206, 18, 18, 0.45);
 }
 
@@ -1539,25 +1541,29 @@ section {
   font-size: 16px;
   transition: 0.5s;
   margin-left: 25px;
-  color: var(--font-secondary);
+  color: black;
   font-weight: 600;
 }
 
 .hero .btn-watch-video i {
-  color: var(--color-primary);
+  color: black;
   font-size: 32px;
   transition: 0.3s;
   line-height: 0;
   margin-right: 8px;
 }
 
-.hero .btn-watch-video:hover {
+
+.hero .btn-watch-video:hover i {
   color: var(--color-primary);
 }
 
-.hero .btn-watch-video:hover i {
-  color: rgba(206, 18, 18, 0.8);
+.hero .content-bg {
+  background-color: rgba(0, 0, 0, 0.6); /* Black background with 60% opacity */
+  padding: 20px; /* Add some padding to give space around the text */
+  border-radius: 15px; /* Optional: To make the edges of the background rounded */
 }
+
 
 @media (max-width: 640px) {
   .hero h2 {
