@@ -28,6 +28,16 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- This should be moved to the css-->
+  <style>
+    @media (max-width: 2000px) {
+        .about-img {
+            background-size: contain;
+            background-image: linear-gradient(rgba(0, 255, 0, 0.5), rgba(0, 255, 0, 0.5)), url(assets/img/ev-gif.webp);
+        }
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: Yummy
   * Updated: Sep 18 2023 with Bootstrap v5.3.2
@@ -53,7 +63,7 @@
         <ul>
           <li><a href="#angebot">Unser Angebot</a></li>
           <li><a href="#events">Referenzen</a></li>
-          <!-- <li><a href="#events">Wissen</a></li> -->
+          <!-- <li><a href="#events">Wissen</a></li> -->  
           <li><a href="#about">Über uns</a></li>
       </nav><!-- .navbar -->
 
@@ -93,13 +103,13 @@
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/ev-gif.webp); background-repeat: no-repeat;" data-aos="fade-up" data-aos-delay="150"></div>
+          <div class="col-lg-7 position-relative about-img" style="background-size: contain; background-position: center center; background-image: url(assets/img/ev-gif.webp); background-repeat: no-repeat;" data-aos="fade-up" data-aos-delay="150"></div>
           <div class="col-lg-5 d-flex align-items-start" data-aos="fade-up" data-aos-delay="300">
             <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
                 Steigen Sie um auf grüne Energie!
               </p>
-              <ul>
+              <ul style="font-size: 1.5em;">
                 <li><i class="bi bi-check2-all"></i> PV-Anlagen</li>
                 <li><i class="bi bi-check2-all"></i> Wallboxen</li>
                 <li><i class="bi bi-check2-all"></i> Batteriespeicher</li>
