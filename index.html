@@ -38,13 +38,7 @@
     }
   </style>
 
-  <!-- =======================================================
-  * Template Name: Yummy
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <script src="js/loadComponents.js"></script>
 </head>
 
 <body>
@@ -54,16 +48,13 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/Logo_Solarteam.png">
-        <!-- <h1>Solarteam Rheinland</h1> -->
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#angebot">Unser Angebot</a></li>
           <li><a href="#events">Referenzen</a></li>
-          <!-- <li><a href="#events">Wissen</a></li> -->
           <li><a href="#about">Über uns</a></li>
           <li><a href="#wiesen">Wiesen</a></li>
       </nav><!-- .navbar -->
@@ -76,143 +67,18 @@
   </header><!-- End Header -->
 
 <!-- ======= Hero Section ======= -->
-<section id="hero" class="hero align-items-center">
-  <div class="hero" style="background-image: url('assets/img/main2.jpg')"> </div>
-  <div class="container">
-    <div class="section-header">
-      <p style="text-align: left;">Willkommen beim Solarteam Rheinland!</p>
-    </div>
-    <div class="content">
-      <p>Der zuverlässige Partner für Ihre eigene, kleine Energiewende. Wir unterstützen Sie bei der Umsetzung von Photovoltaik-Anlagen, Batteriespeichern und Wallboxen. Von der Beratung bis hin zur Inbetriebnahme – bei dem Solarteam Rheinland erhalten Sie alles aus einer Hand.
-        <br>Viel Spaß auf unserer Website!
-      </p>
-    </div>
-  </div>
-</section><!-- End Hero Section -->
+  <div id="willkomen"></div>
+  <script>
+    window.onload = () => {
+        loadComponents(['willkomen', 'angebot', 'leistungen']);
+    };
+  </script>
 
 
   <main id="main">
 
-            <!-- ======= About Section ======= -->
-    <section id="angebot" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <p>Unser Angebot</p>
-        </div>
-
-        <div class="row gy-4">
-          <div class="col-lg-5 d-flex align-items-start" data-aos="fade-up" data-aos-delay="300">
-            <div class="content ps-0 ps-lg-5">
-              <p>
-                Steigen Sie um auf grüne Energie!
-              </p>
-              <ul style="font-size: 1.5em;">
-                <li><i class="bi bi-check2-all"></i> PV-Anlagen</li>
-                <li><i class="bi bi-check2-all"></i> Wallboxen</li>
-                <li><i class="bi bi-check2-all"></i> Batteriespeicher</li>
-              </ul>
-              <p>
-                Machen Sie den ersten Schritt in eine nachhaltige Zukunft
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-7 position-relative about-img" style="background-size: contain; background-position: center center; background-image: url(assets/img/ev-gif.webp); background-repeat: no-repeat;" data-aos="fade-up" data-aos-delay="150"></div>
-
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-        <!-- ======= LesitungenSection ======= -->
-        <section id="Leistungen" class="why-us section-bg">
-
-          <div class="container" data-aos="fade-up">
-
-            <div class="section-header">
-              <p>Unsere Leistungen</p>
-            </div>
-
-            <div class="row gy-4">
-              <div class="col-lg-12 d-flex align-items-center">
-                <div class="row gy-4">
-                  <div class="col-xl-3" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                      <i class="bi bi-clipboard-data"></i>
-                      <h4>Beratung</h4>
-                      <p>Wir beraten Sie gerne unverbindlich zu den Möglichkeiten, Ihr Eigenheim fit für die Zukunft zu machen!</p>
-                    </div>
-                  </div><!-- End Icon Box -->
-    
-                  <div class="col-xl-3" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                      <i class="bi bi-gem"></i>
-                      <h4>Planung</h4>
-                      <p>Wir legen großen Wert auf Kundennähe, individuelle Lösungen und Erreichbarkeit – mit uns bekommen Sie keine Lösung von der Stange</p>
-                    </div>
-                  </div><!-- End Icon Box -->
-    
-                  <div class="col-xl-3" data-aos="fade-up" data-aos-delay="400">
-                    <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                      <i class="bi bi-inboxes"></i>
-                      <h4>Umsetzung</h4>
-                      <p>Wir realisieren Ihre Anlage selber. Unser Qualitätsanspruch und unsere Erfahrung macht sich für Sie bezahlt. Starke Fachpartner ergänzen unser Angebot</p>
-                    </div>
-                  </div><!-- End Icon Box -->
-    
-                  
-                  <div class="col-xl-3" data-aos="fade-up" data-aos-delay="500">
-                    <div class="icon-box d-flex flex-column justify-content-center align-items-center">
-                      <i class="bi bi-clipboard-data"></i>
-                      <h4>Service</h4>
-                      <p>Wir sind auch nach Inbetriebnahme für Sie da und bieten Ihnen Wartung und Überwachung Ihrer Anlage an</p>
-                    </div>
-                  </div><!-- End Icon Box -->
-    
-                </div>
-              </div>
-    
-            </div>
-    
-          </div>
-        </section>
-
-    <!-- ======= Stats Counter Section ======= -->
-    <!-- <section id="stats-counter" class="stats-counter">
-      <div class="container" data-aos="zoom-out">
-
-        <div class="row gy-4">
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Kunden</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Projekte</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Installierte Leistung kW</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Workers</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>End Stats Counter Section -->
+    <div id="angebot"></div>
+    <div id="leistungen"></div>
 
     <!-- ======= Events Section ======= -->
     <section id="events" class="events">
@@ -382,26 +248,51 @@
 
         <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
           <div class="row">
-            <div class="col-xl-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="col-xl-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-            </div>
+              <div class="col-xl-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Name, Vorname" required>
+              </div>
+              <div class="col-xl-6 form-group">
+                  <input type="text" name="adresse" class="form-control" id="adresse" placeholder="Adresse: (Straße, Hausnr., PLZ, Ort)" required>
+              </div>
+              <div class="col-xl-6 form-group">
+                  <input type="text" name="telefonnummer" class="form-control" id="telefonnummer" placeholder="Telefonnummer" required>
+              </div>
+              <div class="col-xl-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="E-Mail-Adresse" required>
+              </div>
+              <div class="col-xl-6 form-group">
+                  <input type="text" class="form-control" name="stromverbrauch" id="stromverbrauch" placeholder="Jährlicher Stromverbrauch" required>
+              </div>
+              <div class="col-xl-6 form-group">
+                  <select class="form-control" name="Dachform" id="Dachform" required>
+                      <option value="">Dachform auswählen</option>
+                      <option value="Satteldach">Satteldach</option>
+                      <option value="Flachdach">Flachdach</option>
+                      <option value="Pultdach">Pultdach</option>
+                      <!-- Add more options as needed -->
+                  </select>
+              </div>
+              <div class="col-xl-6 form-group">
+                  <input type="text" class="form-control" name="dachausrichtung" id="dachausrichtung" placeholder="Dachausrichtung" required>
+              </div>
+              <div class="col-xl-6 form-group">
+                  <input type="text" class="form-control" name="dachneigung" id="dachneigung" placeholder="Dachneigungswinkel (falls bekannt)" required>
+              </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
           </div>
           <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
           </div>
           <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
           </div>
           <div class="text-center"><button type="submit">Send Message</button></div>
-        </form><!--End Contact Form -->
+      </form><!-- End Contact Form -->
+      
 
       </div>
     </section><!-- End Contact Section -->
@@ -422,11 +313,6 @@
         &copy; Copyright <strong><span>Yummy</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">Alva Coletti</a>
       </div>
     </div>
 
