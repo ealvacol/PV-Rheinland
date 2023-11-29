@@ -33,8 +33,9 @@
   margin: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
+  height: 300px;
 }
 .toggle {
   transform: scale(0.8);
@@ -86,7 +87,6 @@
   justify-content: center;
   transition: all 200ms ease;
   background: transparent;
-  height: 320px;
   min-width: 800px;
   max-width: 1200px;
   flex-grow: 1;
@@ -159,7 +159,7 @@
 }
 
 .main-container .steps-container .step .label .description {
-    font-size: 15px;
+    font-size: 16px;
     padding-top: 1vw;
     color: var(--color-label-completed)
 }
