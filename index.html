@@ -72,7 +72,7 @@
   <div id="willkomen"></div>
   <script>
     window.onload = () => {
-        loadComponents(['willkomen', 'angebot', 'leistungen']);
+        loadComponents(['willkomen', 'angebot', 'wiesen', 'leistungen']);
     };
   </script>
 
@@ -80,6 +80,7 @@
   <main id="main">
 
     <div id="angebot"></div>
+    <div id="wiesen"></div>
     <div id="leistungen"></div>
 
     <!-- ======= Events Section ======= -->
@@ -90,38 +91,36 @@
           <p>Referenzen</p>
         </div>
 
-        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
+        <div class="container" data-aos="fade-up" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); gap: 20px;">
 
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-1.jpg)">
-              <h3>PV-Installation</h3>
-              <div class="price align-self-start">100 kW</div>
-              <p class="description">
-                Quo corporis voluptas ea ad. Consectetur inventore sapiente ipsum voluptas eos omnis facere. Enim facilis veritatis id est rem repudiandae nulla expedita quas.
-              </p>
-            </div><!-- End Event item -->
-
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-2.jpg)">
-              <h3>PV-Installation</h3>
-              <div class="price align-self-start">100 kW</div>
-              <p class="description">
-                In delectus sint qui et enim. Et ab repudiandae inventore quaerat doloribus. Facere nemo vero est ut dolores ea assumenda et. Delectus saepe accusamus aspernatur.
-              </p>
-            </div><!-- End Event item -->
-
-            <div class="swiper-slide event-item d-flex flex-column justify-content-end" style="background-image: url(assets/img/events-3.jpg)">
-              <h3>Wallbox Installation</h3>
-              <div class="price align-self-start">10 kW</div>
-              <p class="description">
-                Laborum aperiam atque omnis minus omnis est qui assumenda quos. Quis id sit quibusdam. Esse quisquam ducimus officia ipsum ut quibusdam maxime. Non enim perspiciatis.
-              </p>
-            </div><!-- End Event item -->
-
+          <div style="margin-bottom: 80px; max-width: auto; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); border-radius: 8px; overflow: hidden; flex: 1; margin: 10px;">
+            <div style="background: #FF8C00; padding: 20px; color: white;">
+              <p style="font-size: 24px; font-weight: 300; margin: 0; font-family: 'Helvetica Neue', sans-serif;">PV-Installation 1</p>
+            </div>
+            <div class="justify-content-end" style="background-image: url(assets/img/events-1.jpg); padding-top: 80%; background-size: cover; background-position: center;">
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
 
+
+          <div style="margin-bottom: 80px; max-width: auto; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); border-radius: 8px; overflow: hidden; flex: 1; margin: 10px;">
+            <div style="background: #FF8C00; padding: 20px; color: white;">
+              <p style="font-size: 24px; font-weight: 300; margin: 0; font-family: 'Helvetica Neue', sans-serif;">PV-Installation 2</p>
+            </div>
+            <div class="justify-content-end" style="background-image: url(assets/img/events-2.jpg); padding-top: 80%; background-size: cover; background-position: center;">
+            </div>
+          </div>
+
+          <div style="margin-bottom: 80px; max-width: auto; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); border-radius: 8px; overflow: hidden; flex: 1; margin: 10px;">
+            <div style="background: #FF8C00; padding: 20px; color: white;">
+              <p style="font-size: 24px; font-weight: 300; margin: 0; font-family: 'Helvetica Neue', sans-serif;">Wallbox Installation</p>
+            </div>
+            <div class="justify-content-end" style="background-image: url(assets/img/events-3.jpg); padding-top: 80%; background-size: cover; background-position: center;">
+            </div>
+          </div>
+          
+        </div>
       </div>
+      
     </section><!-- End Events Section -->
 
     <!-- ======= About Section ======= -->
